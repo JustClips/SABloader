@@ -1,7 +1,7 @@
 if game.CoreGui:FindFirstChild("a9") then game.CoreGui.a9:Destroy() end
 local function D(s)local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'s=string.gsub(s,'[^'..b..'=]','')return(s:gsub('.',function(x)if x=='='then return''end;local r,b='',b:find(x)-1;for i=6,1,-1 do r=r..(b%2^i-b%2^(i-1)>0 and'1'or'0')end;return r end):gsub('%d%d%d?%d?%d?%d?%d?%d?',function(x)if#x~=8 then return''end;local c=0;for i=1,8 do c=c+(x:sub(i,i)=='1'and 2^(8-i)or 0)end;return string.char(c)end))end
 local function k1()return D('aHR0cHM6Ly9rZXlzeXN0ZW0tcHJvZHVjdGlvbi0zNDE5LnVwLnJhaWx3YXkuYXBwL2FwaS92ZXJpZnkta2V5')end
-local function k2()return D('aHR0cHM6Ly9kaXNjb3JkLmdnL1FxcVZiQlRL')end
+local function k2()return D('aHR0cHM6Ly9kaXNjb3JkLmdnL01wTWJ3TWVxTko=')end
 local function k3()return D('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0p1c3RDbGlwcy9TQUJGQVJNL3JlZnMvaGVhZHMvbWFpbi9sb2FkZXIubHVh')end
 
 local a=Instance.new
